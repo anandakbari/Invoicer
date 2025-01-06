@@ -94,19 +94,13 @@
 // }
 
 
-
 import Image from "next/image";
 import Link from "next/link";
 import HeroImage from "@/public/hero.png";
-import { RainbowButton } from "@/components/ui/rainbow-button";
-import { ArrowRight, Star, CheckCircle2, Shield, Zap } from "lucide-react";
+import {RainbowButton} from "@/components/ui/rainbow-button";
+import {ArrowRight, Star, CheckCircle2, Shield, Zap} from "lucide-react";
 
-const FeatureBadge = ({ icon: Icon, text }) => (
-    <div className="flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-lg border shadow-sm">
-        <Icon className="h-4 w-4 text-primary" />
-        <span className="text-sm font-medium">{text}</span>
-    </div>
-);
+
 
 export function Hero() {
     return (
@@ -134,7 +128,8 @@ export function Hero() {
                     {/* Main Heading */}
                     <h1 className="mt-8 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight leading-[1.1]">
                         Create & Send
-                        <span className="block mt-2 bg-gradient-to-r from-blue-600 via-blue-500 to-purple-600 text-transparent bg-clip-text">
+                        <span
+                            className="block mt-2 bg-gradient-to-r from-blue-600 via-blue-500 to-purple-600 text-transparent bg-clip-text">
                             Professional Invoices
                         </span>
                         <span className="block mt-2">in Seconds</span>
@@ -147,25 +142,41 @@ export function Hero() {
 
                     {/* CTA Buttons */}
                     <div className="mt-8 flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
-                        <Link href="/register">
+                        <Link href="">
                             <RainbowButton className="w-full sm:w-auto text-lg px-8">
                                 Start Free Trial
                             </RainbowButton>
                         </Link>
                         <Link
-                            href="#demo"
+                            href=""
                             className="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900 font-medium"
                         >
-                            Watch Demo <ArrowRight className="h-4 w-4" />
+                            Watch Demo <ArrowRight className="h-4 w-4"/>
                         </Link>
                     </div>
 
                     {/* Trust Indicators */}
                     <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl">
-                        <FeatureBadge icon={CheckCircle2} text="14-day free trial" />
-                        <FeatureBadge icon={Shield} text="Bank-level security" />
-                        <FeatureBadge icon={Zap} text="Instant setup" />
-                        <FeatureBadge icon={Star} text="5-star rated support" />
+                        <div
+                            className="flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-lg border shadow-sm">
+                            <CheckCircle2 className="h-4 w-4 text-primary"/>
+                            <span className="text-sm font-medium">14-day free trial</span>
+                        </div>
+                        <div
+                            className="flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-lg border shadow-sm">
+                            <Shield className="h-4 w-4 text-primary"/>
+                            <span className="text-sm font-medium">Bank-level security</span>
+                        </div>
+                        <div
+                            className="flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-lg border shadow-sm">
+                            <Zap className="h-4 w-4 text-primary"/>
+                            <span className="text-sm font-medium">Instant setup</span>
+                        </div>
+                        <div
+                            className="flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-lg border shadow-sm">
+                            <Star className="h-4 w-4 text-primary"/>
+                            <span className="text-sm font-medium">5-star rated support</span>
+                        </div>
                     </div>
 
                     {/* Integration Logos */}
@@ -188,11 +199,11 @@ export function Hero() {
                 {/* Right side - Image */}
                 <div className="flex-1 relative w-full">
                     {/* Floating Feature Cards */}
-                    <div className="absolute -left-16 top-1/4 animate-float-slow hidden lg:block">
+                    <div className="absolute -left-16 animate-float-slow hidden lg:block">
                         <div className="bg-white/90 backdrop-blur-sm p-4 rounded-lg shadow-lg border">
                             <div className="flex items-center gap-3">
                                 <div className="size-10 rounded-full bg-green-100 flex items-center justify-center">
-                                    <CheckCircle2 className="h-5 w-5 text-green-600" />
+                                    <CheckCircle2 className="h-5 w-5 text-green-600"/>
                                 </div>
                                 <div>
                                     <p className="font-medium">Payment Received</p>
@@ -202,11 +213,11 @@ export function Hero() {
                         </div>
                     </div>
 
-                    <div className="absolute -right-8 bottom-1/4 animate-float hidden lg:block">
+                    <div className="absolute -right-20 bottom-1 animate-float hidden lg:block">
                         <div className="bg-white/90 backdrop-blur-sm p-4 rounded-lg shadow-lg border">
                             <div className="flex items-center gap-3">
                                 <div className="size-10 rounded-full bg-blue-100 flex items-center justify-center">
-                                    <Zap className="h-5 w-5 text-blue-600" />
+                                    <Zap className="h-5 w-5 text-blue-600"/>
                                 </div>
                                 <div>
                                     <p className="font-medium">Invoice Sent</p>
@@ -217,7 +228,7 @@ export function Hero() {
                     </div>
 
                     {/* Background Gradient */}
-                    <div className="absolute inset-0 -mt-12 blur-3xl" style={{ zIndex: -1 }}>
+                    <div className="absolute inset-0 -mt-12 blur-3xl" style={{zIndex: -1}}>
                         <svg
                             fill="none"
                             viewBox="0 0 400 400"
