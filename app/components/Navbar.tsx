@@ -70,7 +70,7 @@ export function Navbar() {
 
                 <div className="flex items-center gap-4">
 
-                    <Link href="/register">
+                    <Link href="/login">
                         <RainbowButton>Get Started</RainbowButton>
                     </Link>
                 </div>

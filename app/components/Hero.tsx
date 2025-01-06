@@ -142,9 +142,9 @@ export function Hero() {
 
                     {/* CTA Buttons */}
                     <div className="mt-8 flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
-                        <Link href="">
+                        <Link href="/login">
                             <RainbowButton className="w-full sm:w-auto text-lg px-8">
-                                Start Free Trial
+                                Get Started
                             </RainbowButton>
                         </Link>
                         <Link
