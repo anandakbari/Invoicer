@@ -2,15 +2,12 @@ import prisma from "@/app/utils/db";
 import {requireUser} from "@/app/utils/hooks";
 import {
     Card,
-    CardContent,
     CardDescription,
     CardFooter,
     CardHeader,
     CardTitle,
 } from "@/components/ui/card";
-import Image from "next/image";
 import { redirect } from "next/navigation";
-// import WarningGif from "@/public/warning-gif.gif";
 import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
 import SubmitButton from "@/app/components/SubmitButtons";

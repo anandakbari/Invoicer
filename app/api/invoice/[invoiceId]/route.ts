@@ -1,7 +1,6 @@
 import {NextResponse} from "next/server";
 import prisma from "@/app/utils/db";
 import jsPDF from "jspdf";
-import {headers} from "next/headers";
 import {formatCurrency} from "@/app/utils/formatCurrency";
 
 

@@ -2,7 +2,6 @@ import {requireUser} from "@/app/utils/hooks";
 import prisma from "@/app/utils/db";
 import {NextResponse} from "next/server";
 import {emailClient} from "@/app/utils/mailtrap";
-import {formatCurrency} from "@/app/utils/formatCurrency";
 
 
 export async function POST(request: Request, {
@@ -45,6 +44,7 @@ export async function POST(request: Request, {
 
         return NextResponse.json({success: true})
     } catch (error) {
+        console.log(error)
         return NextResponse.json({error: "Failed to send Email reminder"}, {status: 500})
     }
 
