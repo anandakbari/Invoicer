@@ -12,7 +12,7 @@ import {onboardingSchema} from "@/app/utils/zodSchema";
 
 
 
-export default function () {
+export default function Onboarding() {
 
     const [lastResult,action]=useActionState(onboardUser,undefined);
     const [form, fields]=useForm({
