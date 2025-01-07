@@ -147,12 +147,12 @@ export function Hero() {
                                 Get Started
                             </RainbowButton>
                         </Link>
-                        <Link
-                            href=""
-                            className="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900 font-medium"
-                        >
-                            Watch Demo <ArrowRight className="h-4 w-4"/>
-                        </Link>
+                        {/*<Link*/}
+                        {/*    href=""*/}
+                        {/*    className="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900 font-medium"*/}
+                        {/*>*/}
+                        {/*    Watch Demo <ArrowRight className="h-4 w-4"/>*/}
+                        {/*</Link>*/}
                     </div>
 
                     {/* Trust Indicators */}
@@ -179,21 +179,21 @@ export function Hero() {
                         </div>
                     </div>
 
-                    {/* Integration Logos */}
-                    <div className="mt-12">
-                        <p className="text-sm text-muted-foreground mb-4">
-                            Integrates seamlessly with
-                        </p>
-                        <div className="flex flex-wrap items-center gap-6">
-                            {/* Replace these divs with actual integration logos */}
-                            {[1, 2, 3, 4].map((i) => (
-                                <div
-                                    key={i}
-                                    className="h-8 w-24 bg-gray-200 rounded opacity-50 hover:opacity-100 transition-opacity"
-                                />
-                            ))}
-                        </div>
-                    </div>
+                    {/*/!* Integration Logos *!/*/}
+                    {/*<div className="mt-12">*/}
+                    {/*    <p className="text-sm text-muted-foreground mb-4">*/}
+                    {/*        Integrates seamlessly with*/}
+                    {/*    </p>*/}
+                    {/*    <div className="flex flex-wrap items-center gap-6">*/}
+                    {/*        /!* Replace these divs with actual integration logos *!/*/}
+                    {/*        {[1, 2, 3, 4].map((i) => (*/}
+                    {/*            <div*/}
+                    {/*                key={i}*/}
+                    {/*                className="h-8 w-24 bg-gray-200 rounded opacity-50 hover:opacity-100 transition-opacity"*/}
+                    {/*            />*/}
+                    {/*        ))}*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
                 </div>
 
                 {/* Right side - Image */}

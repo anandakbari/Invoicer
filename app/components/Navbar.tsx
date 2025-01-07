@@ -62,11 +62,11 @@ export function Navbar() {
                     </p>
                 </Link>
 
-                <div className="hidden md:flex items-center gap-8">
-                    <Link href="#features" className="text-gray-600 hover:text-gray-900">Features</Link>
-                    <Link href="#pricing" className="text-gray-600 hover:text-gray-900">Demo</Link>
-                    <Link href="#contact" className="text-gray-600 hover:text-gray-900">Contact</Link>
-                </div>
+                {/*<div className="hidden md:flex items-center gap-8">*/}
+                {/*    <Link href="#features" className="text-gray-600 hover:text-gray-900">Features</Link>*/}
+                {/*    <Link href="#pricing" className="text-gray-600 hover:text-gray-900">Demo</Link>*/}
+                {/*    <Link href="#contact" className="text-gray-600 hover:text-gray-900">Contact</Link>*/}
+                {/*</div>*/}
 
                 <div className="flex items-center gap-4">
 
